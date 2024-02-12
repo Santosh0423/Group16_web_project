@@ -28,5 +28,5 @@ The website is for a restaurant that mixes different types of food to make somet
 
 
 ### Feature 4 
-####  In Reservation system  customers can book tables online. Allow them to specify the date, time, number of guests, and any special requests.
+  In Reservation system  customers can book tables online. Allow them to specify the date, time, number of guests, and any special requests.
 </details>
