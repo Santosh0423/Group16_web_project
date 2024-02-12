@@ -23,3 +23,14 @@ CREATE TABLE `ResponseMessage` (
   `timestamp` date NOT NULL,
   `staff_id` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `TableBooking` (
+  `booking_id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `phone_number` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `Reservation_Date` date NOT NULL,
+  `Reservation_Time` time NOT NULL,
+  `Table_Number` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
