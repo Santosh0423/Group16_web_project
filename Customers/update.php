@@ -6,6 +6,7 @@ $sql = "select * from Customers";
 $result = $conn->query($sql);?>
 <table class="table">
 <tr>
+<th>Customers Id</th>
 <th>First Name</th>
 <th>Last Name</th>
 <th>Email ID</th>
@@ -24,8 +25,8 @@ if($result ->num_rows > 0) {
 <td><?php echo $row["email_id"]; ?></td>
 <td><?php echo $row["phone_number"]; ?></td>
 <td><?php echo $row["address"]; ?></td>
-<td><a href="updatesingle.php?email_id=<?php echo $row['email_id']; ?>">Update</a></td>
-<td><a href="delete.php?email_id=<?php echo $row['email_id']; ?>">Delete</a></td>
+<td><a href="updatesingle.php?email_id=<?php echo $row['customers_id']; ?>">Update</a></td>
+<td><a href="delete.php?email_id=<?php echo $row['customers_id']; ?>">Delete</a></td>
 </tr>
 
 <?php 

@@ -7,6 +7,7 @@ if($result ->num_rows > 0) {
 //fetch_assoc(): It fetches result as an associative array.
 echo "<table class=\"table\">
 <tr>
+<th>Customers Id</th>
 <th>First Name</th>
 <th>Last Name</th>
 <th>Email ID</th>
@@ -15,6 +16,7 @@ echo "<table class=\"table\">
 </tr>";
     while($row = $result ->fetch_assoc()){
         echo "<tr>
+        <td><a href='updatesingle.php?id=$row[customers_id]'>$row[customers_id]</a></td>
         <td>". $row["first_name"]."</td> 
         <td>". $row["last_name"] ."</td>
         <td>" . $row["email_id"] . "</td>
