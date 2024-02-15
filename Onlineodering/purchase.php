@@ -1,27 +1,7 @@
 <?php
 session_start();
-
-// Check if the cart is empty
-if (empty($_SESSION['cart'])) {
-    echo "Your cart is empty.";
-    exit;
-}
+include 'header.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase Items</title>
-    <link rel="stylesheet" href="styles4.css"> <!-- Include your custom CSS file -->
-</head>
-<body>
-
-<header>
-    <!-- Header content goes here -->
-</header>
-
 <div class="container">
     <h1>Review Your Order</h1>
     <!-- Display cart items here -->
@@ -64,11 +44,8 @@ if (empty($_SESSION['cart'])) {
 
         <button type="submit">Place Order</button>
     </form>
-</div>
-
-<footer>
-    <!-- Footer content goes here -->
-</footer>
-
-</body>
-</html>
+ </div>
+        </div>
+        <?php
+ include 'footer.php';
+?>

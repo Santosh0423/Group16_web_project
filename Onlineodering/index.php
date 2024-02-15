@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bagmati Restaurant</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style4.css">
-</head>
-<body>
-
-<header>
-    <div class="logo-container">
-        <a href="index.php">
-            <img src="image/BR.png" alt="Restaurant Logo" width="50" height="50">
-        </a>
-        <div class="restaurant-info">
-            <h1>Bagmati Restaurant</h1>
-            <p class="smaller-text">Breakfast and lunch served every day</p>
-        </div>
-    </div>
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="menu.php">Menu</a>
-        <a href="contact.php">Contact</a>
-        <a href="cart.php">Cart</a>
-        <a href="careers.php">Careers</a>
-    </nav>
-</header>
+<?php
+include 'header.php'
+?>
 
 <div class="main-menu">
     <div class="container">
@@ -37,7 +11,7 @@
                     <h2>Momo</h2>
                     <div class="menu-item-details">
                         <h3>Veg Momo</h3>
-                        <img src="image/veg-momo.jpg" alt="Veg Momo">
+                        <img src="images/momo.jpg" alt="Veg Momo">
                         <p>Price:
                             <span class="price">Large: €10.56</span>
                             <span class="price">Medium: €8.99</span>
@@ -64,7 +38,7 @@
                     <h2>Biryani</h2>
                     <div class="menu-item-details">
                         <h3>Chicken Biryani</h3>
-                        <img src="image/chicken-biryani.jpg" alt="Chicken Biryani">
+                        <img src="images/chicken biryani.jpg" alt="Chicken Biryani">
                         <p>Price:
                             <span class="price">Large: €11.23</span>
                             <span class="price">Medium: €8.98</span>
@@ -91,7 +65,7 @@
                     <h2>Beverages</h2>
                     <div class="menu-item-details">
                         <h3>Tea</h3>
-                        <img src="image/tea.jpg" alt="Tea">
+                        <img src="images/Tea.jpg" alt="Tea">
                         <p>Price:
                             <span class="price">Black Tea: €6</span>
                             <span class="price">White Tea: €8</span>
@@ -116,7 +90,7 @@
                     <h2>Local Foods</h2>
                     <div class="menu-item-details">
                         <h3>Selroti</h3>
-                        <img src="image/selroti.jpg" alt="Selroti">
+                        <img src="images/selrotii.jpg" alt="Selroti">
                         <p>Price:
                             <span class="price">Large: €12.99</span>
                             <span class="price">Medium: €9.85</span>
@@ -147,12 +121,11 @@
     <a href="purchase.php" class="btn btn-success">Purchase</a>
 </div>
 
-<footer class="footer">
-    <!-- Footer content goes here -->
-</footer>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+<?php
+include 'footer.php'
+?>
