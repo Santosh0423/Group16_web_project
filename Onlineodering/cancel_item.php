@@ -13,6 +13,6 @@ if(isset($_GET['item_key']) && is_numeric($_GET['item_key'])) {
 }
 
 // Redirect back to the shopping cart page
-header("Location: shopping_cart.php");
+header("Location: shopping cart.php");
 exit();
 ?>

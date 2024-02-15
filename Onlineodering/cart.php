@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'header.php';
 
 // Check if there's a cancellation action requested
 if (isset($_GET['action']) && $_GET['action'] === 'cancel' && isset($_GET['item_key'])) {
@@ -9,7 +10,6 @@ if (isset($_GET['action']) && $_GET['action'] === 'cancel' && isset($_GET['item_
         // Remove the item from the cart
         unset($_SESSION['cart'][$item_key]);
         // Refresh the page to reflect the changes
-        header("Location: {$_SERVER['PHP_SELF']}");
         exit();
     }
 }
@@ -52,4 +52,5 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
     echo "</form>";
 
 }
+include 'footer.php';
 ?>
