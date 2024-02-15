@@ -21,18 +21,12 @@
             </div>
         </div>
         
-        
-
-        <nav>
-            <a href="Customers.php">Sign In</a>
-            <a href="read.php">Read</a>
-            <a href="delete.php">Delete</a>
-            <a href="update.php">Update</a>
-            <a href="updateSingle.php">Update Single</a>
-            
-            
-
-        </nav>
     </header>
 
     <section id="home">
+
+
+ 
+
+
+ 

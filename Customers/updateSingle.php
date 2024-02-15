@@ -1,9 +1,10 @@
 <?php
 include 'header.php';
 include 'db.php';
+if(isset($_GET['customers_id'])){
 $a = $_GET['customers_id'];
 $result = mysqli_query($conn,"SELECT * FROM Customers WHERE customers_id= '$a'");
-$row= mysqli_fetch_array($result);
+$row= mysqli_fetch_array($result);}
 ?>
 
 <h1>Update  Data</h1>
@@ -20,14 +21,15 @@ Email Id:<br>
 <input type="text" name="email_id" value="<?php echo $row['email_id']; ?>">
 <br>
 Phone Number: <br>
-<input type="number" name="phone_number"  value="<?php echo $row['phone_number']; ?>">
+<input type="varchar" name="phone"  value="<?php echo $row['phone']; ?>">
 <br>
 Address: <br>
 <input type="text" name="address"  value="<?php echo $row['address']; ?>">
 <br>
 
-<input type="submit" name="submit" value="Submit" >
+<button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
+
 <?php 
 if(isset($_POST['submit'])){
     # it now updates only fname, your task is to update all other fields in your team
