@@ -22,6 +22,7 @@ if($result ->num_rows > 0) {
     while($row = $result ->fetch_assoc()){
 ?>
 <tr>
+<td><?php echo $row["booking_id"]; ?></td>
 <td><?php echo $row["table_number"]; ?></td>
 <td><?php echo $row["first_name"]; ?></td>
 <td><?php echo $row["last_name"]; ?></td>
