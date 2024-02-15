@@ -1,25 +1,21 @@
 <?php
 include 'header.php';
 include 'db.php'; 
-$sql =  "SELECT * FROM Customers";
+$sql =  "SELECT * FROM CustomerFeedback";
 $result = $conn->query($sql);
 if($result ->num_rows > 0) {
 //fetch_assoc(): It fetches result as an associative array.
 echo "<table class=\"table\">
 <tr>
-<th><h3>Customers Id</h3></th>
-<th><h3>First Name</h3></th>
-<th><h3>Last Name</h3></th>
-<th><h3>Email ID</h3></th>
-<th><h3>Phone</h3></th>
-<th><h3>Address</h3></th> 
+<th>Feedback ID</th>
+<th>Customers ID</th>
+<th>Feedback</th>
+<th>timestamp</th> 
 </tr>";
     while($row = $result ->fetch_assoc()){
         echo "<tr>
-        <td><a href='updatesingle.php?id=$row[customers_id]'>$row[customers_id]</a></td>
-        <td>{$row["first_name"]}</td> 
-        <td>{$row["last_name"]}</td>
-        <td>{$row["email_id"]}</td>
+        <td><a href='updatesingle.php?id=$row[feedback_id]'>$row[feedback_id]</a></td>
+        <td>{$row["cus_id"]}</td>
         <td>{$row["phone"]}</td>
         <td>{$row["address"]}</td>
         </tr>";

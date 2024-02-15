@@ -1,5 +1,5 @@
 <?php
-$servername ="php24-php-1";
+$servername ="php24-db-1";
 $username ="project";
 $password ="password";
 $dbname ="project";
