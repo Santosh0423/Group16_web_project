@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
    
 
     
-    $sql = "INSERT INTO Customers (customers_id, feedbackMessage, timestamp)
+    $sql = "INSERT INTO CustomersFeedback (customers_id, feedbackMessage, timestamp)
             VALUES ('$customers_id', '$feedbackMessage', 'timestamp')";
 
     if ($conn->query($sql) === TRUE) {

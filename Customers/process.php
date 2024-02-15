@@ -20,6 +20,16 @@ if (isset($_POST['submit'])) {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+    if(isset($_POST['Delete'])){
+        $query = mysqli_query($conn,"DELETE FROM Customers where customers_id='$a'");
+        if($query){
+            echo "Record Deleted with customers_id: $a <br>";
+            echo "<a href='update.php'> Check your updated List </a>";
+            // if you want to redirect to update page after updating
+            //header("location: update.php");
+        }
+        else { echo "Record Not Deleted";}
+        }
 
   
     $conn->close();
