@@ -51,3 +51,25 @@ CREATE TABLE `Staff` (
   `phone` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total_amount DECIMAL(10, 2),
+    payment_method ENUM('credit_card', 'paypal', 'cash_on_delivery')
+);
+CREATE TABLE order_items (
+    item_id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT,
+    item_name VARCHAR(255),
+    quantity INT,
+    price DECIMAL(10, 2)
+);
+CREATE TABLE customers (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    address TEXT,
+    phone VARCHAR(20)
+);
