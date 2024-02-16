@@ -11,20 +11,5 @@ include 'header.php'
 </form>
 
 <?php
-//Check if the form has been submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Process form data
-    $ContactId = isset($_POST["ContactId"]) ? $_POST["ContactId"] : '';
-    $Name = isset($_POST["Name"]) ? $_POST["Name"] : '';
-    $DateOfContact = isset($_POST["DateOfContact"]) ? $_POST["DateOfContact"] : '';
-    $message = isset($_POST["Message"]) ? $_POST["Message"] : '';
-    
-    echo "ContactId: $ContactId<br>";
-    echo "Name: $Name<br>";
-    echo "DateOfContact: $DateOfContact<br>";
-    echo "Message: $message<br>";
-}
-
-
 include 'footer.php'
 ?>
