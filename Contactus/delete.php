@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 include 'db.php';
-$a = $_GET['id'];
+if(isset($_GET['ContactId'])) {
 $result = mysqli_query($conn,"SELECT * FROM ContactUs WHERE ContactId= '$a'");
 $row= mysqli_fetch_array($result);
 ?>

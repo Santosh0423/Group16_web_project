@@ -25,9 +25,9 @@
 
         <nav>
             <a href="ContactUs.php">Contact Us</a>
-            <a href="read.php">read</a>
-            <a href="update.php">update</a>
-            <a href="delete.php">delete</a>
+            <a href="read.php">Read</a>
+            <a href="update.php">Update</a>
+            <a href="delete.php">Delete</a>
            
             
             
