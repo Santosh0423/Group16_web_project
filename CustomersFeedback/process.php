@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     // Process form data 
     $customers_id = isset($_POST["customers_id"]) ? $_POST["customers_id"] : '';
     $feedbackMessage = isset($_POST["feedbackMessage"]) ? $_POST["feedbackMessage"] : '';
-    $timestamp = isset($_POST["timestamp"]) ? $_POST["timestamp"] : '';
+    $timestamp = date('Y-m-d H:i:s');
    
 
     
