@@ -37,5 +37,8 @@ This features  support easy reservation processing, greet guests, manage advance
 Here are the list of database table that are part of our project.
 
 #### Table 1( created by Santosh Sigdel): OrderingTable
+#### Table 2( created by Ajit Devkota):CustomersFeedback
+#### Table 3( created by Nitish Raj Neupane):ContactUs
+#### Table 4( created by Bibek Pandey):TableBooking
 
 </details>

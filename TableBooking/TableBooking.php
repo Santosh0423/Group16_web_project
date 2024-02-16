@@ -1,6 +1,7 @@
 <?php
 include 'header.php'
 ?>
+<h1> Online Table Booking </h1>
 <form method="post" name="table_booking_form" action="process.php">
     Table Number: <input type="number" name="table_number"> <br><br>
     First Name: <input type="text" name="first_name"> <br><br>
