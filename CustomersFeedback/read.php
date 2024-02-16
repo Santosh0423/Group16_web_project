@@ -15,9 +15,9 @@ echo "<table class=\"table\">
     while($row = $result ->fetch_assoc()){
         echo "<tr>
         <td><a href='updatesingle.php?id=$row[feedback_id]'>$row[feedback_id]</a></td>
-        <td>{$row["cus_id"]}</td>
-        <td>{$row["phone"]}</td>
-        <td>{$row["address"]}</td>
+        <td>{$row["customers_id"]}</td>
+        <td>{$row["feedbackMessage"]}</td>
+        <td>{$row["timestamp"]}</td>
         </tr>";
     }
     echo "</table>";
