@@ -21,10 +21,9 @@
     </div>
     <nav>
         <a href="index.php">Home</a>
-        <a href="menu.php">Menu</a>
-        <a href="contact.php">Contact</a>
         <a href="cart.php">Cart</a>
-        <a href="careers.php">Careers</a>
+        <a href="purchase.php">Purchase</a>
+        
     </nav>
 </header>
 
