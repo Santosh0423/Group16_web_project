@@ -31,7 +31,7 @@ CREATE TABLE `menu` (
   `Size` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;
-##### santosh Sigdel (online odering)
+# santosh Sigdel (online odering)
 CREATE TABLE customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
