@@ -24,12 +24,11 @@
         
 
         <nav>
-            <a href="ex1.php">Exercise 1</a>
-            <a href="ex2.php">Exercise 2</a>
-            <a href="ex3.php">Exercise 3</a>
-            <a href="ex4.php">Exercise 4</a>
-            <a href="#">Exercise 5</a>
-            <a href="ex7.php">Exercise 7</a>
+            <a href="ContactUs.php">Contact Us</a>
+            <a href="read.php">read</a>
+            <a href="update.php">update</a>
+            <a href="delete.php">delete</a>
+           
             
             
 
