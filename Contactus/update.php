@@ -21,8 +21,8 @@ if($result ->num_rows > 0) {
 <td><?php echo $row["Name"]; ?></td>
 <td><?php echo $row["DateOfContact"]; ?></td>
 <td><?php echo $row["Message"]; ?></td>
-<td><a href="updatesingle.php?email_address=<?php echo $row['email_address']; ?>">Update</a></td>
-<td><a href="delete.php?email_address=<?php echo $row['email_address']; ?>">Delete</a></td>
+<td><a href="updatesingle.php?DateOfContact=<?php echo $row['DateOfContact']; ?>">Update</a></td>
+<td><a href="delete.php?DateOfContact=<?php echo $row['DateOfContact']; ?>">Delete</a></td>
 </tr>
 
 <?php 

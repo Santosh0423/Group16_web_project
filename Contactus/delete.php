@@ -29,7 +29,7 @@ Message:<br>
 if(isset($_POST['submit'])){
     $query = mysqli_query($conn,"DELETE FROM ContactUs where ContactId='$a'");
     if($query){
-        echo "Record Deleted with ContactId: $a <br>";
+        echo "Record Deleted frpm ContactUs: $a <br>";
         echo "<a href='update.php'> Check your updated List </a>";
         // if you want to redirect to update page after updating
         //header("location: update.php");
