@@ -10,7 +10,7 @@ include 'header.php'
     Phone Number: <input type="text" name="phone_number"> <br><br>
     Reservation Date: <input type="date" name="reservation_date" required> <br><br>
     Reservation Time: <input type="time" name="reservation_time" required> <br><br>
-    Table Number: <input type="number" name="table_number"> <br><br>
+    Table Number: <input type="number" name="table_number" min="1" max="10" required > <br><br>
 
     <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
