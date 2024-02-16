@@ -1,26 +1,20 @@
 <?php
-if(isset ($_POST['submit'])) {
-
-    $contactid = $_POST['ContactId'];
+if(isset($_POST['submit'])) {
     $Name = $_POST['Name'];
     $DateOfContact = $_POST['DateOfContact'];
     $Message = $_POST['Message'];
 
-include 'db.php';
+    include 'db.php';
 
-$sql = "insert into Contact us(ContactId, Name, DateOfContact, Message)
-     values('$ContactId', '$Name', '$DateOfContact', '$Message' )";
+    $sql = "INSERT INTO ContactUs (Name, DateOfContact, Message)
+            VALUES ('$Name', '$DateOfContact', '$Message')";
 
+    if($conn->query($sql) === TRUE) {
+        echo "Your data has been recorded successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 
-     if($conn->query($sql) ===True) {
-        echo"Your data has been Recorded sucessfully";
-
-
-     }
-else{
-    echo"Error:" .$sql . "<br>" .$conn->error;
+    $conn->close();
 }
-$conn->close();
-}
-
 ?>
