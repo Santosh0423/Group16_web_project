@@ -11,9 +11,6 @@ $row= mysqli_fetch_array($result);}
 <form method="post" action="process.php">
 <div><?php if(isset($message)) { echo $message; } ?>
 </div>
-Table Number: <br>
-<input type="text" name="first_name"  value="<?php echo $row['table_number']; ?>">
-<br>
 First Name: <br>
 <input type="text" name="first_name"  value="<?php echo $row['first_name']; ?>">
 <br>
@@ -32,7 +29,9 @@ Reservation Date: <br>
 Reservation Time: <br>
 <input type="text" name="reservation_time"  value="<?php echo $row['reservation_time']; ?>">
 <br>
-
+Table Number: <br>
+<input type="text" name="first_name"  value="<?php echo $row['table_number']; ?>">
+<br>
 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
 

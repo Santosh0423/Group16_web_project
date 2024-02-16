@@ -13,14 +13,13 @@ if ($result->num_rows > 0) {
             <thead>
                 <tr>
                     <th>Booking Id</th>
-                    <th>Table Number</th>
                     <th>First Name</th>
                     <th>Last Name</th>                                       
                     <th>Email</th>
                     <th>Phone Number</th>
                     <th>Reservation Date</th>
                     <th>Reservation Time</th>
-                    
+                    <th>Table Number</th
 
 
                 </tr>
@@ -31,13 +30,14 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
                 <td><a href='updatesingle.php?booking_id=$row[booking_id]'>$row[booking_id]</a></td>
-                <td>{$row['table_number']}</td>
+                
                 <td>{$row['first_name']}</td>
                 <td>{$row['last_name']}</td>
                 <td>{$row['email']}</td>
                 <td>{$row['phone_number']}</td>
                 <td>{$row['reservation_date']}</td>
                 <td>{$row['reservation_time']}</td>
+                <td>{$row['table_number']}</td>
               </tr>";
     }
 
