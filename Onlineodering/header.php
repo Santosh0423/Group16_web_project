@@ -23,7 +23,7 @@
         <a href="index.php">Home</a>
         <a href="cart.php">Cart</a>
         <a href="purchase.php">Purchase</a>
-        
+        <a href="read.php">Read data</a>
     </nav>
 </header>
 

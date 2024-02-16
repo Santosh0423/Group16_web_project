@@ -1,6 +1,6 @@
 <?php
 $servername = "web-dev-env-main-db-1";
-$username = "Group16";
+$username = "root";
 $password = "password"; 
 $dbname = "Group16";
 
