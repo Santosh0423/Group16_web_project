@@ -24,14 +24,10 @@
         
 
         <nav>
-            <a href="Customers.php">Sign In</a>
-            <a href="read.php">Read</a>
-            <a href="delete.php">Delete</a>
-            <a href="update.php">Update</a>
-            <a href="updateSingle.php">Update Single</a>
-            
-            
-
+            <a href="Customers.php">Sign Up</a>
+            <a href="update.php">Read</a>
+            <a href="password_update.php">Update Password</a>
+            <a href="login.php">Log In</a>
         </nav>
     </header>
 

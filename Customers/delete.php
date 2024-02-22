@@ -6,36 +6,33 @@ include 'db.php';
 if(isset($_GET['customers_id'])) {
     $a = $_GET['customers_id'];
     
-    // Query the database to fetch the customer data
-    $result = mysqli_query($conn,"SELECT * FROM Customers WHERE customers_id= '$a'");
-    
-    // Check if any row was fetched
-    if(mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_array($result);
-?>
-
-        <form method="post" action="process.php">
-            <div><?php if(isset($message)) { echo $message; } ?></div>
-            First Name: <br>
-            <input type="text" name="first_name" value="<?php echo $row['first_name']; ?>"><br>
-            Last Name :<br>
-            <input type="text" name="last_name" value="<?php echo $row['last_name']; ?>"><br>
-            Email Id:<br>
-            <input type="text" name="email_id" value="<?php echo $row['email_id']; ?>"><br>
-            Phone Number:<br>
-            <input type="text" name="phone" value="<?php echo $row['phone']; ?>"><br>
-            Address:<br>
-            <input type="text" name="address" value="<?php echo $row['address']; ?>"><br>
-            <button type="submit" class="btn btn-primary" name="submit">Delete</button>
-        </form>
-<?php
-    } else {
-        echo "No record found for the given customers_id.";
+    // Check if the form has been submitted
+    if (isset($_POST['submit'])) {
+        // Perform deletion operation
+        $sql = "DELETE FROM Customers WHERE customers_id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("i", $a);
+        if ($stmt->execute()) {
+            echo "Record deleted successfully";
+        } else {
+            echo "Error deleting record: " . $conn->error;
+        }
+        // Close the prepared statement
+        $stmt->close();
+        // Close the database connection
+        $conn->close();
+        // Optionally redirect to another page after deletion
+        // header("Location: some_page.php");
+        exit(); // Stop further execution
     }
 } else {
     echo "Invalid or missing customers_id parameter in the URL.";
 }
-
-$conn->close();
+?>
+<form method="post">
+    <p>Are you sure you want to delete this record?</p>
+    <button type="submit" class="btn btn-danger" name="submit">Delete</button>
+</form>
+<?php
 include 'footer.php';
 ?>

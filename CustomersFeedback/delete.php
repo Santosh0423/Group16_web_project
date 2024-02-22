@@ -2,12 +2,12 @@
 include 'header.php';
 include 'db.php';
 
-// Check if the customers_id parameter is set in the URL
+// Check if the feedback_id parameter is set in the URL
 if(isset($_GET['feedback_id'])) {
-    $a = $_GET['feedback_id'];
+    $feedback_id = $_GET['feedback_id'];
     
-    // Query the database to fetch the customer data
-    $result = mysqli_query($conn,"SELECT * FROM CustomersFeedback WHERE feedback_id= '$a'");
+    // Query the database to fetch the feedback data
+    $result = mysqli_query($conn, "SELECT * FROM CustomersFeedback WHERE feedback_id = '$feedback_id'");
     
     // Check if any row was fetched
     if(mysqli_num_rows($result) > 0) {
@@ -17,11 +17,11 @@ if(isset($_GET['feedback_id'])) {
         <form method="post" action="process.php">
             <div><?php if(isset($message)) { echo $message; } ?></div>
             Customers Id: <br>
-            <input type="text" name="customers_id" value="<?php echo $row['customers_id']; ?>"><br>
+            <input type="text" name="customers_id" value="<?php echo $row['customers_id']; ?>" readonly><br>
             Feedback :<br>
-            <input type="text" name="feedbackMessage" value="<?php echo $row['feedbackMessabe']; ?>"><br>
+            <input type="text" name="feedbackMessage" value="<?php echo $row['feedbackMessage']; ?>" readonly><br>
             Date:<br>
-            <input type="text" name="timestamp" value="<?php echo $row['timestamp']; ?>"><br>
+            <input type="text" name="timestamp" value="<?php echo $row['timestamp']; ?>" readonly><br>
             <button type="submit" class="btn btn-primary" name="submit">Delete</button>
         </form>
 <?php

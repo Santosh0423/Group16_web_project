@@ -24,7 +24,7 @@
         
 
         <nav>
-        <a href="Customers/Customers.php">Sign In</a>
+        <a href="Customers/Customers.php">Sign Up</a>
             <a href="onlineodering/index.php">Online Odering</a>
             <a href="customersFeedback/feedbackForm.php">Feedback</a>
             <a href="Contactus/ContactUs.php">Contact Us</a>
