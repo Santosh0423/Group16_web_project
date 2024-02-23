@@ -83,9 +83,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <button type="submit">Login</button>
             </div>
-            <div class="form-group">
-                <button type="submit">Sign Up</button>
-            </div>
             <?php if(isset($error)) { ?>
                 <div class="error"><?php echo $error; ?></div>
             <?php } ?>
