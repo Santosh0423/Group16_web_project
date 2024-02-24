@@ -22,9 +22,8 @@
         </div>
          
         <nav>
-            <a href="read.php"> Read  Data </a>
-            <a href="delete.php">Delete Data</a>
-            <a href="update.php">Update Data</a>
+            
+        <a href="update.php">Read Data</a>
          </nav>
     </header>
 

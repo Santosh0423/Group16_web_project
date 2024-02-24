@@ -1,14 +1,13 @@
 <?php
 include 'header.php';
 include 'db.php';
-if(isset($_GET['table_id'])){
-$a = $_GET['table_id'];
-$result = mysqli_query($conn,"SELECT * FROM TableBooking WHERE table_id= '$a'");
+if(isset($_GET['booking_id'])){
+$a = $_GET['booking_id'];
+$result = mysqli_query($conn,"SELECT * FROM TableBooking WHERE booking_id= '$a'");
 $row= mysqli_fetch_array($result);}
 ?>
-
 <h1>Update  Data</h1>
-<form method="post" action="process.php">
+<form method="post" action="">
 <div><?php if(isset($message)) { echo $message; } ?>
 </div>
 First Name: <br>
@@ -18,19 +17,32 @@ Last Name :<br>
 <input type="text" name="last_name" value="<?php echo $row['last_name']; ?>">
 <br>
 Email :<br>
-<input type="text" name="email" value="<?php echo $row['email']; ?>">
+<input type="email" name="email" value="<?php echo $row['email']; ?>">
 <br>
 Phone Number: <br>
-<input type="varchar" name="phone"  value="<?php echo $row['phone']; ?>">
+<input type="text" name="phone_number"  value="<?php echo $row['phone_number']; ?>">
 <br>
 Reservation Date: <br>
-<input type="text" name="reservation_date"  value="<?php echo $row['resevation_date']; ?>">
+<input type="date" name="reservation_date"  value="<?php echo $row['reservation_date']; ?>">
 <br>
 Reservation Time: <br>
-<input type="text" name="reservation_time"  value="<?php echo $row['reservation_time']; ?>">
+<input type="time" name="reservation_time"  value="<?php echo $row['reservation_time']; ?>">
 <br>
 Table Number: <br>
-<input type="text" name="first_name"  value="<?php echo $row['table_number']; ?>">
+<input type="number" name="table_number" min="1" max="10" value="<?php echo $row['table_number']; ?>" required>
+<br>
+Number Of Person: <br>
+<input type="number" name="number_persons" min="1" max="10" value="<?php echo $row['number_persons']; ?>" required>
+<br>
+Reservation Type:
+    <select name="reservation_type" required>
+        <option value="normal">Normal</option>
+        <option value="special">Special Occasion</option> 
+        <option value="business">Business Meeting</option>
+    </select><br><br>
+
+Notes: <br>
+<input type="text" name="notes"  value="<?php echo $row['notes']; ?>">
 <br>
 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
@@ -39,15 +51,40 @@ Table Number: <br>
 if(isset($_POST['submit'])){
     # it now updates only fname, your task is to update all other fields in your team
     $first_name = $_POST['first_name'];
-    $query = mysqli_query($conn,"UPDATE TableBooking set first_name='$first_name' where table_id='$a'");
-    if($query){
-        echo "Record Modified Successfully <br>";
+    $last_name = $_POST['last_name'];
+    $phone_number = $_POST['phone_number'];
+    $email = $_POST['email'];
+    $reservation_date = $_POST['reservation_date'];
+    $reservation_time = $_POST['reservation_time'];
+    $table_number = $_POST['table_number'];
+    $number_persons = $_POST['number_persons'];
+    $reservation_type = $_POST['reservation_type'];
+    $notes = $_POST['notes'];
+
+    $query = mysqli_query($conn,"UPDATE TableBooking set first_name='$first_name' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set last_name='$last_name' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set email='$email' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set phone_number='$phone_number' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set reservation_date='$reservation_date' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set reservation_time='$reservation_time' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set table_number='$table_number' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set number_persons='$number_persons' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set reservation_type='$reservation_type' where booking_id='$a'");
+    $query = mysqli_query($conn,"UPDATE TableBooking set notes='$notes' where booking_id='$a'");
+
+
+    if($result){
+
+        echo "Record has been updated Successfully <br>";
         echo "<a href='update.php'> Check your updated List </a>";
         // if you want to redirect to update page after updating
-        //header("location: update.php");
+        //header('location:updatesingle.php);
+      
+
     }
-    else { echo "Record Not modified";}
+    else { echo "Record Not notified";}
     }
 $conn->close();
 include 'footer.php';
 ?>
+
