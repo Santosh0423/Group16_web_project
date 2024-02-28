@@ -5,47 +5,9 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: white;
-    color: red;
-    padding: 1em;
-    text-align: left; 
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-}
-
-.logo-container {
-    display: flex;
-    align-items: flex-end;
-}
-
-header img {
-    margin-right: 20px; 
-}
-
-h1 {
-    margin: 0; 
+h1, p {
+    margin: 0;
     margin-left: 10px;
-}
-
-h1,
-p {
-    margin: 0; 
-    margin-left: 0; 
-}
-
-h3 {
-    color: black;
-    font-size: medium;
-}
-
-h4 {
-    color: red;
-}
-
-h4, p {
-    padding-right: 15px;
 }
 
 nav {
@@ -61,29 +23,27 @@ nav a {
     font-weight: bold;
 }
 
-.form-group {
-    margin-bottom: 20px;
+section {
+    padding: 2em;
+}
+
+header {
+    background-color: white;
+    color: red;
+    padding: 1em;
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-label {
-    display: inline-block;
-    margin-bottom: 5px;
-    text-align: left;
+.logo-container {
+    display: flex;
+    align-items: flex-end;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 0.5px solid #ccc; 
-}
-
-button {
-    background-color: #0578ec;
-    color: rgb(255, 252, 252);
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer; 
+header img {
+    margin-right: 20px;
 }
 
 .footer {
@@ -92,9 +52,8 @@ button {
     background-size: cover;
     background-position: center;
     color: white;
-    position: relative; 
+    position: relative;
     background-image: url(image/footer\ image.jpg);
-    margin-top: 11px;
 }
 
 .footer::before {
@@ -104,7 +63,6 @@ button {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .footer-col {
@@ -124,13 +82,13 @@ button {
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .contact-item img {
-    width: 20px; 
+    width: 20px;
     height: 20px;
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
 .contact {
@@ -152,40 +110,38 @@ button {
 }
 
 .social-icons-container img {
-    width: 30px; 
+    width: 30px;
     height: 30px;
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px; 
+.main-menu {
+    width: 900px;
+    margin: 16px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
-.image-container img {
-    width: 30%; 
-    height: auto;
+img {
+    width: 70px;
+    height: 70px;
 }
 
-#home {
-    padding: 2em;
-    text-align: center;
-}
-
-.content-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; 
+h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
 }
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
+
     p {
-        font-size: 0.8em; 
+        font-size: 0.8em;
     }
+
     .image-container img {
-        width: 100%; 
+        width: 100%;
     }
 }

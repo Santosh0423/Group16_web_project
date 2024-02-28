@@ -58,3 +58,20 @@ CREATE TABLE order_items (
     FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
  <img src="images/erdiagramonlineodering.png" alt="erdiagram">
+
+
+
+# bibekpandey (tablebooking)
+CREATE TABLE `TableBooking` (
+  `booking_id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `phone_number` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `reservation_date` date NOT NULL,
+  `reservation_time` time NOT NULL,
+  `table_number` varchar(10) NOT NULL,
+  `number_persons` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `reservation_type` varchar(50) NOT NULL,
+  `notes` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

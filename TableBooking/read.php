@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 include 'db.php';
-// SQL query to retrieve data from the 'studentsinfo' table
+// SQL query to retrieve data from the 'TableBooking' table
 $sql = "SELECT * FROM TableBooking";
 
 // Execute the SQL query and store the result
@@ -19,7 +19,12 @@ if ($result->num_rows > 0) {
                     <th>Phone Number</th>
                     <th>Reservation Date</th>
                     <th>Reservation Time</th>
-                    <th>Table Number</th
+                    <th>Table Number</th>
+                    <th> Number Of Person</th>
+                    <th> Reservation Type</th>
+                    <th>Notes</th>
+                    <th>Update</th>
+                    <th>Delete</th>
 
 
                 </tr>
@@ -38,7 +43,11 @@ if ($result->num_rows > 0) {
                 <td>{$row['reservation_date']}</td>
                 <td>{$row['reservation_time']}</td>
                 <td>{$row['table_number']}</td>
+                <td>{$row['number_persons']}</td>
+                <td>{$row['reservation_type']}</td>
+                <td>{$row['notes']}</td>
               </tr>";
+ 
     }
 
     echo "</tbody></table>";

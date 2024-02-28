@@ -20,7 +20,11 @@
 
             </div>
         </div>
-        
+         
+        <nav>
+            
+        <a href="update.php">Read Data</a>
+         </nav>
     </header>
 
     <section id="home">
