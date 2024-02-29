@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -10,6 +11,7 @@ if(isset($_GET['item_key']) && is_numeric($_GET['item_key'])) {
     }
 }
 
-header("Location: cart.php"); 
+
+header("Location: cart.php");
 exit();
 ?>
