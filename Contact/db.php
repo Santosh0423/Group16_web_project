@@ -1,8 +1,8 @@
 <?php
-$servername ="php024-db-1";
-$username ="group16";
-$password ="password";
-$dbname ="group16";
+$servername ="localhost";
+$username ="nitish23000";
+$password ="PXSHAyOl";
+$dbname ="wp_nitish23000";
 
 //create database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
