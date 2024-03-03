@@ -1,17 +1,201 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
+header {
+    background-color: white;
+    color: red;
+    padding: 1em;
+    text-align: left; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+header img {
+    margin-right: 20px; 
+}
+
+h1 {
+    margin: 0; 
+    margin-left: 10px;
+}
+
+h1,
+p {
+    margin: 0; 
+    margin-left: 0; 
+}
+
+h3 {
+    color: black;
+    font-size: medium;
+}
+
+h4 {
+    color: red;
+}
+
+h4, p {
+    padding-right: 15px;
+}
+
+nav {
+    display: flex;
+    margin-left: auto;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid #ccc; 
+}
+
+button {
+    background-color: #0578ec;
+    color: rgb(255, 252, 252);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer; 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative; 
+    background-image: url(image/footer\ image.jpg);
+    margin-top: 11px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.footer-col {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.contact-item img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 5px; 
+}
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-col.social-icons {
+    text-align: center;
+}
+
+.social-icons-container {
+    margin-top: 10px;
+}
+
+.social-icons-container a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons-container img {
+    width: 30px; 
+    height: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; 
+}
+
+.image-container img {
+    width: 30%; 
+    height: auto;
+}
+
+#home {
+    padding: 2em;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; 
+    }
+    p {
+        font-size: 0.8em; 
+    }
+    .image-container img {
+        width: 100%; 
+    }
+}
+
+/* Additional styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .logo-container {
@@ -61,7 +245,7 @@ header {
 }
 
 .menu-item h2 {
-    background-color: #007bff;
+    background-color: #ff0008;
     color: #fff;
     padding: 10px;
     margin-top: 0;
@@ -123,7 +307,7 @@ input[type="submit"]:hover {
     font-style: italic;
 }
 
-/* Additional styles */
+/* Container */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -144,10 +328,13 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
+form {
+    margin-top: 20px;
+}
+
 form label {
     display: block;
     margin-bottom: 5px;
-    text-align: left;
 }
 
 form input[type="text"],
@@ -181,108 +368,4 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #45a049;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-around;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    position: relative;
-    background-image: url(image/footer\ image.jpg);
-    margin-top: 11px;
-}
-
-.footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.footer-col {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    width: 25%;
-    float: left;
-    box-sizing: border-box;
-    padding: 10px;
-    color: white;
-}
-
-.contact-info {
-    margin-top: 10px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.contact-item img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
-.contact {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer-col.social-icons {
-    text-align: center;
-}
-
-.social-icons-container {
-    margin-top: 10px;
-}
-
-.social-icons-container a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.social-icons-container img {
-    width: 30px;
-    height: 30px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.image-container img {
-    width: 30%;
-    height: auto;
-}
-
-#home {
-    padding: 2em;
-    text-align: center;
-}
-
-.content-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.5em;
-    }
-    p {
-        font-size: 0.8em;
-    }
-    .image-container img {
-        width: 100%;
-    }
 }
