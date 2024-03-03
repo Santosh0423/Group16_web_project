@@ -1,90 +1,186 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: white;
-    color: red;
-    padding: 1em;
-    text-align: left; 
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
 }
 
 .logo-container {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
-header img {
-    margin-right: 20px; 
+.logo-container img {
+    margin-right: 10px;
 }
 
-h1 {
-    margin: 0; 
-    margin-left: 10px;
+.restaurant-info h1 {
+    margin: 0;
 }
 
-h1,
-p {
-    margin: 0; 
-    margin-left: 0; 
-}
-
-h3 {
-    color: black;
-    font-size: medium;
-    text-align: left;
-}
-
-h4 {
-    color: red;
-}
-
-h4, p {
-    padding-right: 15px;
-}
-
-nav {
+.nav {
     display: flex;
-    margin-left: auto;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-nav a {
-    color: red;
+.nav a {
+    color: #fff;
     text-decoration: none;
-    padding: 1em;
-    margin: 0 1em;
-    font-weight: bold;
+    margin: 0 10px;
 }
 
-.form-group {
+.main-menu {
+    padding: 20px;
+}
+
+.menu-item {
     margin-bottom: 20px;
-    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    display: inline-block;
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-item-details {
+    padding: 20px;
+}
+
+.menu-item h2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin-bottom: 0;
+}
+
+.menu-item .price {
+    display: block;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+}
+
+/* Additional styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
     margin-bottom: 5px;
     text-align: left;
 }
 
-input, textarea {
+form input[type="text"],
+form input[type="email"],
+form textarea {
     width: 100%;
-    padding: 10px;
-    border: 0.5px solid #ccc; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-button {
-    background-color: #0578ec;
-    color: rgb(255, 252, 252);
-    padding: 5px 10px;
+form textarea {
+    height: 100px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    cursor: pointer; 
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 .footer {
@@ -93,7 +189,7 @@ button {
     background-size: cover;
     background-position: center;
     color: white;
-    position: relative; 
+    position: relative;
     background-image: url(image/footer\ image.jpg);
     margin-top: 11px;
 }
@@ -105,7 +201,7 @@ button {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-col {
@@ -125,13 +221,13 @@ button {
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .contact-item img {
-    width: 20px; 
+    width: 20px;
     height: 20px;
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
 .contact {
@@ -153,18 +249,18 @@ button {
 }
 
 .social-icons-container img {
-    width: 30px; 
+    width: 30px;
     height: 30px;
 }
 
 .image-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .image-container img {
-    width: 30%; 
+    width: 30%;
     height: auto;
 }
 
@@ -176,17 +272,17 @@ button {
 .content-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
     p {
-        font-size: 0.8em; 
+        font-size: 0.8em;
     }
     .image-container img {
-        width: 100%; 
+        width: 100%;
     }
 }
