@@ -25,7 +25,7 @@
 
         <nav>
         <a href="Customers/Customers.php">Sign Up</a>
-            <a href="onlineodering/index.php">Online Odering</a>
+            <a href="Onlineodering/index.php">Online Odering</a>
             <a href="CustomersFeedback/feedbackForm.php">Feedback</a>
             <a href="Contactus/ContactUs.php">Contact Us</a>
             <a href="TableBooking/TableBooking.php">Table Booking</a>
