@@ -1,42 +1,3 @@
-<?php
-session_start();
-
-// Include database connection
-include 'db.php';
-
-// Check if the form has been submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get username and password from the form
-    $email_id = $_POST['email_id'];
-    $password = $_POST['password'];
-
-    // SQL query to check if the entered credentials match any user in the database
-    $sql = "SELECT * FROM Customers WHERE email_id = '$email_id'";
-    $result = $conn->query($sql);
-
-    if($result === false){
-        echo "Error: ". $conn->error;    }
-        else{   if ($result->num_rows == 1) {
-        // User found, verify password
-        $row = $result->fetch_assoc();
-        if (password_verify($password, $row['password'])) {
-            // Password is correct, set session variables
-            $_SESSION['email_id'] = $email_id;
-            // Redirect to a logged-in user's page
-            header("Location: ../firstpage.php");
-            exit();
-        } else {
-            // Password is incorrect
-            $error = "Invalid password: Try again";
-        }
-    } else {
-        // User not found
-        $error = "Invalid email id: Try again";
-    }
-}
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,6 +50,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php } ?>
         </form>
     </section>
+
+<?php
+session_start();
+
+// Include database connection
+include 'db.php';
+
+// Check if the form has been submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get username and password from the form
+    $email_id = $_POST['email_id'];
+    $password = $_POST['password'];
+
+    // SQL query to check if the entered credentials match any user in the database
+    $sql = "SELECT * FROM Customers WHERE email_id = '$email_id'";
+    $result = $conn->query($sql);
+
+    if($result === false){
+        echo "Error: ". $conn->error;    }
+        else{   if ($result->num_rows == 1) {
+        // User found, verify password
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row['password'])) {
+            // Password is correct, set session variables
+            $_SESSION['email_id'] = $email_id;
+            // Redirect to a logged-in user's page
+            header("Location: ../firstpage.php");
+            exit();
+        } else {
+            // Password is incorrect
+            $error = "Invalid password: Try again";
+        }
+    } else {
+        // User not found
+        $error = "Invalid email id: Try again";
+    }
+}
+}
+?>
+
+
 
     <footer>
     <link rel="stylesheet" href="style2.css">
