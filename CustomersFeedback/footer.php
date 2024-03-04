@@ -1,5 +1,5 @@
 </section>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
     <div class="footer">
         <div class="footer-col">
             <h4>About Us</h4>
