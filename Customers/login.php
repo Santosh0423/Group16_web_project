@@ -6,6 +6,7 @@
     <title>Login - Bagmati Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
@@ -93,7 +94,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     <footer>
-    <link rel="stylesheet" href="style2.css">
     <div class="footer">
         <div class="footer-col">
             <h4>About Us</h4>
