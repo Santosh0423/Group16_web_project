@@ -63,6 +63,7 @@ CREATE TABLE order_items (
     price DECIMAL(10, 2),
     FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
+ <img src="images/erdiagramonlineodering.png" alt="erdiagram">
 
 #### Table 2( created by Ajit Devkota):CustomersFeedback and Sign up
 # Azeet Devkota (Customers sign up and feedback)
