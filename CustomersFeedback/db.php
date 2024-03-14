@@ -1,8 +1,8 @@
 <?php
-$servername ="localhost";
-$username ="ajit22000";
-$password ="ulhwbI9Q";
-$dbname ="wp_ajit22000";
+$servername ="php24-db-1";
+$username ="project";
+$password ="password";
+$dbname ="project";
 
 //create database connection
 $conn = new mysqli($servername, $username, $password, $dbname);

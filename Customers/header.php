@@ -27,7 +27,6 @@
         <nav>
             <a href="Customers.php">Sign Up</a>
             <a href="update.php">Read</a>
-            <a href="password_update.php">Update Password</a>
             <a href="login.php">Log In</a>
         </nav>
     </header>

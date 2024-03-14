@@ -1,6 +1,6 @@
 <?php
-include 'header.php';
-include 'db.php';
+include ("header.php");
+include ("db.php");
 
 // Check if the customers_id parameter is set in the URL
 if(isset($_GET['customers_id'])) {
@@ -15,24 +15,27 @@ if(isset($_GET['customers_id'])) {
         if ($stmt->execute()) {
             echo "Record deleted successfully";
         } else {
-            echo "Error deleting record: " . $conn->error;
+            echo "Error deleting record: " . $stmt->error;
         }
         // Close the prepared statement
         $stmt->close();
         // Close the database connection
         $conn->close();
-        // Optionally redirect to another page after deletion
-        // header("Location: some_page.php");
-        exit(); // Stop further execution
+        exit();
     }
 } else {
     echo "Invalid or missing customers_id parameter in the URL.";
 }
+
+// Display the form only if the record was not successfully deleted
+if (!isset($_POST['submit']) || (isset($_POST['submit']) && $stmt->error)) 
 ?>
 <form method="post">
     <p>Are you sure you want to delete this record?</p>
     <button type="submit" class="btn btn-danger" name="submit">Delete</button>
 </form>
 <?php
-include 'footer.php';
+
+
+include ("footer.php");
 ?>

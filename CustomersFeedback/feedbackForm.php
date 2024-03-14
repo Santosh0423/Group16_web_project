@@ -11,7 +11,7 @@ include 'header.php'
         </div>
         <div class="form-group">
             <label for="feedbackMessage">Feedback Message:</label>
-            <textarea name="feedbackMessage" id="feedbackMessage" rows="4" cols="50"></textarea>
+            <textarea name="feedbackMessage" id="feedbackMessage" rows="4" cols="50" required></textarea>
         </div>
         <div class="form-group">
             <label for="timestamp">Time:</label>
