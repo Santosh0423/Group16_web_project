@@ -76,7 +76,7 @@ if(isset($_POST['Update'])){
         echo "Record has been updated Successfully <br>";
         echo "<a href='update.php'> Check your updated List </a>";
         // if you want to redirect to update page after updating
-        //header('location:update.php);
+        //header('location:updatesingle.php);
       
 
     }

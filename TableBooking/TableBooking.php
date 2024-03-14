@@ -21,14 +21,13 @@ include 'header.php'
         <option value="business">Business Meeting</option>
     </select><br><br>
     
-    
-
 
     <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
 <?php
 include 'footer.php'
 ?>
+
 
 
 
