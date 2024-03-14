@@ -40,5 +40,5 @@ if (isset($_POST['submit'])) {
     echo "Form has not been submitted";
 }
 
-include ("footer.php"); // Include the footer
+include ("footer.php"); 
 ?>
