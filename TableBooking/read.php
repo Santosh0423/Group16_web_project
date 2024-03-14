@@ -25,8 +25,6 @@ if ($result->num_rows > 0) {
                     <th>Notes</th>
                     <th>Update</th>
                     <th>Delete</th>
-
-
                 </tr>
             </thead>
             <tbody>";
@@ -45,7 +43,6 @@ if ($result->num_rows > 0) {
                 <td>{$row['table_number']}</td>
                 <td>{$row['number_persons']}</td>
                 <td>{$row['reservation_type']}</td>
-                <td>{$row['notes']}</td>
               </tr>";
  
     }

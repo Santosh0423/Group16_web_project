@@ -1,9 +1,9 @@
 
 <?php
-$servername = "localhost";
-$username = "bibek23001";
-$password = "14UVBi4n";
-$dbname = "wp_bibek23001";
+$servername = "php24-db-1";
+$username = "Group16";
+$password = "password";
+$dbname = "Group16";
 // create database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -13,4 +13,5 @@ if ($conn->connect_error){
     
 }
 ?>
+
 

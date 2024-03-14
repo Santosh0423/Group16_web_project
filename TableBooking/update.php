@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
                     <th>Table Number</th>
                     <th>Number Of Person</th>
                     <th>Reservation Type</th>
-                    <th>Notes</th>
+                   
                     <th>Update</th>
                     <th>Delete</th>
                 </tr>
@@ -43,7 +43,7 @@ if ($result->num_rows > 0) {
                 <td>{$row['table_number']}</td>
                 <td>{$row['number_persons']}</td>
                 <td>{$row['reservation_type']}</td>
-                <td>{$row['notes']}</td>
+            
                 <td><a href='updatesingle.php?booking_id={$row['booking_id']}'>Update</a></td>
                 <td><a href='delete.php?booking_id={$row['booking_id']}'>Delete</a></td>
               </tr>";
