@@ -47,7 +47,7 @@ Reservation Type:
 
 <?php 
 if(isset($_POST['Update'])){
-    # it now updates only fname, your task is to update all other fields in your team
+  
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $phone_number = $_POST['phone_number'];
@@ -75,7 +75,7 @@ if(isset($_POST['Update'])){
 
         echo "Record has been updated Successfully <br>";
         echo "<a href='update.php'> Check your updated List </a>";
-        // if you want to redirect to update page after updating
+        // if we want to redirect to update page after updating
         //header('location:updatesingle.php);
       
 
