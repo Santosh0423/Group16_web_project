@@ -37,8 +37,69 @@ This features  support easy reservation processing, greet guests, manage advance
 Here are the list of database table that are part of our project.
 
 #### Table 1( created by Santosh Sigdel): OrderingTable
+# santosh Sigdel (online odering)
+CREATE TABLE customers (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    address TEXT,
+    phone VARCHAR(20)
+);
+
+CREATE TABLE orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total_amount DECIMAL(10, 2),
+    payment_method ENUM('credit_card', 'paypal', 'cash_on_delivery'),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+CREATE TABLE order_items (
+    item_id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT,
+    item_name VARCHAR(255),
+    quantity INT,
+    price DECIMAL(10, 2),
+    FOREIGN KEY (order_id) REFERENCES orders(order_id)
+);
+ <img src="images/erdiagramonlineodering.png" alt="erdiagram">
+
 #### Table 2( created by Ajit Devkota):CustomersFeedback and Sign up
+# Azeet Devkota (Customers sign up and feedback)
+CREATE TABLE `Customers` (
+  `customers_id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `email_id` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `phone` varchar(50) NOT NULL,
+  `address` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `CustomersFeedback` (
+  `feedback_id` int NOT NULL,
+  `customers_id` int NOT NULL,
+  `feedbackMessage` varchar(400) NOT NULL,
+  `timestamp` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 #### Table 3( created by Nitish Raj Neupane):ContactUs
 #### Table 4( created by Bibek Pandey):TableBooking
+CREATE TABLE `TableBooking` (
+  `booking_id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `phone_number` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `reservation_date` date NOT NULL,
+  `reservation_time` time NOT NULL,
+  `table_number` varchar(10) NOT NULL,
+  `number_persons` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `reservation_type` varchar(50) NOT NULL,
+  `notes` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 </details>
