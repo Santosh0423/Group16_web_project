@@ -13,15 +13,13 @@ if (isset($_POST['submit'])) {
     $table_number = $_POST['table_number'];
     $number_persons = $_POST['number_persons'];
     $reservation_type = $_POST['reservation_type'];
-    $notes = $_POST['notes'];
-
-
+   
     // Connect to the database server
     include 'db.php'; // Assuming 'db.php' contains the database connection code
 
     // Write SQL statement to insert data
-    $sql = "INSERT INTO TableBooking (first_name, last_name, phone_number, email, reservation_date, reservation_time, table_number, number_persons, reservation_type, notes)
-            VALUES ('$first_name', '$last_name', '$phone_number', '$email', '$reservation_date', '$reservation_time', '$table_number', '$number_persons', '$reservation_type', '$notes')";
+    $sql = "INSERT INTO TableBooking (first_name, last_name, phone_number, email, reservation_date, reservation_time, table_number, number_persons, reservation_type)
+            VALUES ('$first_name', '$last_name', '$phone_number', '$email', '$reservation_date', '$reservation_time', '$table_number', '$number_persons', '$reservation_type')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Your data was recorded";
@@ -37,6 +35,7 @@ if (isset($_POST['submit'])) {
 }
 include 'footer.php';
 ?>
+
 
 
 
