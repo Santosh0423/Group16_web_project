@@ -14,8 +14,6 @@ if (isset($_POST['submit'])) {
     $number_persons = $_POST['number_persons'];
     $reservation_type = $_POST['reservation_type'];
    
-
-
     // Connect to the database server
     include 'db.php'; // Assuming 'db.php' contains the database connection code
 
@@ -37,6 +35,7 @@ if (isset($_POST['submit'])) {
 }
 include 'footer.php';
 ?>
+
 
 
 

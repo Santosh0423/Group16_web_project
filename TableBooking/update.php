@@ -23,7 +23,6 @@ if ($result->num_rows > 0) {
                     <th>Table Number</th>
                     <th>Number Of Person</th>
                     <th>Reservation Type</th>
-                   
                     <th>Update</th>
                     <th>Delete</th>
                 </tr>
