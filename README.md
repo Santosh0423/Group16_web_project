@@ -1,3 +1,19 @@
+<?php
+function generateTOC($content) {
+    $pattern = '/##\s(.*?)(?=\n##|$)/';
+    preg_match_all($pattern, $content, $matches);
+    $toc = "<details>\n<summary>Table of Contents</summary>\n\n";
+    foreach ($matches[1] as $match) {
+        $anchor = strtolower(str_replace(' ', '-', $match));
+        $toc .= "* [$match](#$anchor)\n";
+    }
+    $toc .= "</details>\n";
+    return $toc;
+}
+
+$content = "
+
+
 # Group16_web_project
 Bagmati Restaurant - Team16
 
@@ -58,7 +74,7 @@ Here are the list of database table that are part of our project.
 <details>
 <summary>List of the forms created</summary>
 
-Form 1 (Created By Santosh Sigdel): Form Name: Order form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Onlineodering/purchase.php) | (shell.hamk.fi) (http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/purchase.php )| Validations Applied
+Form 1 (Created By Santosh Sigdel): Form Name: Order form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Onlineodering/purchase.php) | (shell.hamk.fi) (http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/purchase.php)| Validations Applied
 
 Form 2: (Created By Ajit Devkota): Form Name: Sign_Up_Form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/Customers.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/Customers.php) | Validations Applied
 
