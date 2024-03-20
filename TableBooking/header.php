@@ -25,6 +25,7 @@
         <nav>
             
         <a href="update.php">Read Data</a>
+
          </nav>
     </header>
 
