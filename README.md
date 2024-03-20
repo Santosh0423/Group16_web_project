@@ -15,20 +15,24 @@ The website is for a restaurant that mixes different types of food to make somet
 
 ### Feature 4 (Bibek Pandey): Online Table Reservation.
 
-### Feature 1   
- In this feature we enable customers to place orders directly through the website. This feature includes menu browsing, customization option, and secure payment option.
-
+### Feature 1
+In this feature we enable customers to place orders directly through the website. This feature includes menu browsing, customization option, and secure payment option.
 
 ### Feature 2
- This feature enables customers to share their opinions and experiences easily through a feedback form. Staff can view, respond, and act on feedback, allowing for continuous improvement and maintaining customer satisfaction.
+This feature enables customers to share their opinions and experiences easily through a feedback form. Staff can view, respond, and act on feedback, allowing for continuous improvement and maintaining customer satisfaction.
+For Sign up:
+Github(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/Customers.php) | Shell.hamk.fi(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/Customers.php)
 
+For Feedback:
+Github(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/feedbackForm.php) | Shell.hamk.fi(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/feedbackForm.php)
 
 ### Feature 3
- This Feature provides  user-friendly contact form, interactive map, email options, social media links, business hours, and a responsive design, ensuring a smooth and accessible communication experience for website visitors.
+This Feature provides user-friendly contact form, interactive map, email options, social media links, business hours, and a responsive design, ensuring a smooth and accessible communication experience for website visitors.
 
+### Feature 4
+This features support easy reservation processing, greet guests, manage advanced online bookings, easy to order. All of this ensure that customers have a smooth and pleasant dining experience.
+Github(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/TableBooking.php) Shell.hamk.fi(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/TableBooking.php
 
-### Feature 4 
-This features  support easy reservation processing, greet guests, manage advanced  online bookings, easy to order. All of this ensure that customers have a smooth and pleasant dining experience.
 </details>
 
 ### Database Tables
@@ -37,69 +41,30 @@ This features  support easy reservation processing, greet guests, manage advance
 Here are the list of database table that are part of our project.
 
 #### Table 1( created by Santosh Sigdel): OrderingTable
-# santosh Sigdel (online odering)
-CREATE TABLE customers (
-    customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    email VARCHAR(255),
-    address TEXT,
-    phone VARCHAR(20)
-);
-
-CREATE TABLE orders (
-    order_id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_id INT,
-    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    total_amount DECIMAL(10, 2),
-    payment_method ENUM('credit_card', 'paypal', 'cash_on_delivery'),
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
-);
-
-CREATE TABLE order_items (
-    item_id INT AUTO_INCREMENT PRIMARY KEY,
-    order_id INT,
-    item_name VARCHAR(255),
-    quantity INT,
-    price DECIMAL(10, 2),
-    FOREIGN KEY (order_id) REFERENCES orders(order_id)
-);
- <img src="images/erdiagramonlineodering.png" alt="erdiagram">
-
 #### Table 2( created by Ajit Devkota):CustomersFeedback and Sign up
-# Azeet Devkota (Customers sign up and feedback)
-CREATE TABLE `Customers` (
-  `customers_id` int NOT NULL,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `email_id` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `phone` varchar(50) NOT NULL,
-  `address` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
-CREATE TABLE `CustomersFeedback` (
-  `feedback_id` int NOT NULL,
-  `customers_id` int NOT NULL,
-  `feedbackMessage` varchar(400) NOT NULL,
-  `timestamp` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 #### Table 3( created by Nitish Raj Neupane):ContactUs
 #### Table 4( created by Bibek Pandey):TableBooking
-CREATE TABLE `TableBooking` (
-  `booking_id` int NOT NULL,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `phone_number` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `reservation_date` date NOT NULL,
-  `reservation_time` time NOT NULL,
-  `table_number` varchar(10) NOT NULL,
-  `number_persons` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `reservation_type` varchar(50) NOT NULL,
-  `notes` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
 </details>
+
+### Created Forms
+<details>
+<summary>List of the forms created</summary>
+
+ Form 1 (Created By Santosh Sigdel): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+
+Form 2: (Created By Ajit Devkota): Form Name: Sign_Up_Form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/Customers.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/Customers.php) | Validations Applied
+Form 3: (Created By Ajit Devkota): Form Name: Customers_Update_form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/updateSingle.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/updatesingle.php?customers_id=11) | Validations Applied
+Form 4: (Created By Ajit Devkota): Form Name: Customers_logIn_form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/login.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/login.php) | Validations Applied
+Form 5: (Created By Ajit Devkota): Form Name: Feedback_form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/feedbackForm.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/feedbackForm.php) | Validations Applied
+Form 6: (Created By Ajit Devkota): Form Name: Feedback_form_Update (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/updateSingle.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/updatesingle.php?feedback_id=25) | Validations Applied
+Form 7: (Created By Nitish Raj Neupane): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+Form 8: (Created By Bibek Pandey): Form Name: Table_booking_Form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/TableBooking.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/TableBooking.php) | Validations Applied
+Form 9:(Created By Bibek Pandey): Form Name: Table_booking_Update_form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/updatesingle.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/updatesingle.php?booking_id=23) | Validations Applied
+</details>
+Created Tables
+List of the tables created
+Table 1 (Created By Santosh Sigdel): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+Table 2 (Created By Ajit Devkota): | Customers_Sign_UP (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/update.php)
+Table 3 (Created By Ajit Devkota): | Customers_feedback (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/update.php)
+Table 4 (Created By Nitish Raj Neupane): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+Table 5 (Created By Bibek Pandey): | Table_Booking (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/update.php)
