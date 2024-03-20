@@ -18,6 +18,9 @@ The website is for a restaurant that mixes different types of food to make somet
 ### Feature 1
 In this feature we enable customers to place orders directly through the website. This feature includes menu browsing, customization option, and secure payment option.
 
+For Online Ordering:
+Github(https://github.com/Santosh0423/Group16_web_project/tree/main/Onlineodering)|shell.hamk.fi(http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/)
+
 ### Feature 2
 This feature enables customers to share their opinions and experiences easily through a feedback form. Staff can view, respond, and act on feedback, allowing for continuous improvement and maintaining customer satisfaction.
 
