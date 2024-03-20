@@ -73,7 +73,7 @@ Form 5: (Created By Ajit Devkota): Form Name: Feedback_form (github)(https://git
 
 Form 6: (Created By Ajit Devkota): Form Name: Feedback_form_Update (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/updateSingle.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/updatesingle.php?feedback_id=25) | Validations Applied
 
-Form 7: (Created By Nitish Raj Neupane): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+Form 7: (Created By Nitish Raj Neupane): Form Name: Contact_form  (github)(http://shell.hamk.fi/~nitish23000/Group16_web_project/Contact/Contact.php) | http://shell.hamk.fi/~nitish23000/Group16_web_project/Contact/Contact.php(shell.hamk.fi). | Validations Applied
 
 Form 8: (Created By Bibek Pandey): Form Name: Table_booking_Form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/TableBooking.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/TableBooking.php) | Validations Applied
 
@@ -94,7 +94,7 @@ Table 2 (Created By Ajit Devkota): | Customers_Sign_UP (github)(https://github.c
 
 Table 3 (Created By Ajit Devkota): | Customers_feedback (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/update.php)
 
-Table 4 (Created By Nitish Raj Neupane): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+Table 4 (Created By Nitish Raj Neupane): Contact (github) (https://github.com/Santosh0423/Group16_web_project/blob/main/Contact/Contact.php) | (shell.hamk.fi)(http://shell.hamk.fi/~nitish23000/Group16_web_project/Contact/Contact.php).
 
 Table 5 (Created By Bibek Pandey): | Table_Booking (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/update.php)
 
