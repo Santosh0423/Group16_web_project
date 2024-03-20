@@ -34,12 +34,15 @@ Github(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFee
 ### Feature 3
 This Feature provides user-friendly contact form, interactive map, email options, social media links, business hours, and a responsive design, ensuring a smooth and accessible communication experience for website visitors.
 
+For contact us:
+Github(https://github.com/Santosh0423/Group16_web_project/blob/main/Contact/Contact.php) | Shell.hamk.fi(http://shell.hamk.fi/~nitish23000/Group16_web_project/Contact/Contact.php)
+
 ### Feature 4
 This features support easy reservation processing, greet guests, manage advanced online bookings, easy to order. All of this ensure that customers have a smooth and pleasant dining experience.
 Github(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/TableBooking.php) Shell.hamk.fi(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/TableBooking.php
 
 </details>
-
+ 
 ### Database Tables
 <details>
 <summary> Database Tables </summary>
