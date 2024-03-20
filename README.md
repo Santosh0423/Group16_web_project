@@ -19,7 +19,8 @@ The website is for a restaurant that mixes different types of food to make somet
 In this feature we enable customers to place orders directly through the website. This feature includes menu browsing, customization option, and secure payment option.
 
 For Online Ordering:
-Github(https://github.com/Santosh0423/Group16_web_project/tree/main/Onlineodering)|shell.hamk.fi(http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/)
+Github(https://github.com/Santosh0423/Group16_web_project/tree/main/Onlineodering)
+shell.hamk.fi(http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/)
 
 ### Feature 2
 This feature enables customers to share their opinions and experiences easily through a feedback form. Staff can view, respond, and act on feedback, allowing for continuous improvement and maintaining customer satisfaction.
@@ -57,7 +58,7 @@ Here are the list of database table that are part of our project.
 <details>
 <summary>List of the forms created</summary>
 
-Form 1 (Created By Santosh Sigdel): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+Form 1 (Created By Santosh Sigdel): Form Name: Order form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Onlineodering/purchase.php) | (shell.hamk.fi) (http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/purchase.php)| Validations Applied
 
 Form 2: (Created By Ajit Devkota): Form Name: Sign_Up_Form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/Customers.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/Customers.php) | Validations Applied
 
@@ -80,7 +81,11 @@ Form 9:(Created By Bibek Pandey): Form Name: Table_booking_Update_form (github)(
 ### Created Tables
 <details>
 <summary>List of the tables created</summary>
-Table 1 (Created By Santosh Sigdel): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+Table 1 (Created By Santosh Sigdel):  | Customers (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Onlineodering/read.php) | (shell.hamk.fi) (http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/read.php)
+
+Table 1.2 (Created By Santosh Sigdel):  | Orders (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Onlineodering/order.php) | (shell.hamk.fi) (http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/cart.php)
+
+Table 1.3 (Created By Santosh Sigdel):  | order_items (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Onlineodering/purchase.php) | (shell.hamk.fi) (http://shell.hamk.fi/~santosh23000/ss_tasks/Onlineodering/purchase.php)
 
 Table 2 (Created By Ajit Devkota): | Customers_Sign_UP (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/update.php)
 
