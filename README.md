@@ -1,19 +1,3 @@
-<?php
-function generateTOC($content) {
-    $pattern = '/##\s(.*?)(?=\n##|$)/';
-    preg_match_all($pattern, $content, $matches);
-    $toc = "<details>\n<summary>Table of Contents</summary>\n\n";
-    foreach ($matches[1] as $match) {
-        $anchor = strtolower(str_replace(' ', '-', $match));
-        $toc .= "* [$match](#$anchor)\n";
-    }
-    $toc .= "</details>\n";
-    return $toc;
-}
-
-$content = "
-
-
 # Group16_web_project
 Bagmati Restaurant - Team16
 
