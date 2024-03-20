@@ -20,6 +20,7 @@ In this feature we enable customers to place orders directly through the website
 
 ### Feature 2
 This feature enables customers to share their opinions and experiences easily through a feedback form. Staff can view, respond, and act on feedback, allowing for continuous improvement and maintaining customer satisfaction.
+
 For Sign up:
 Github(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/Customers.php) | Shell.hamk.fi(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/Customers.php)
 
@@ -50,21 +51,37 @@ Here are the list of database table that are part of our project.
 <details>
 <summary>List of the forms created</summary>
 
- Form 1 (Created By Santosh Sigdel): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+Form 1 (Created By Santosh Sigdel): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
 Form 2: (Created By Ajit Devkota): Form Name: Sign_Up_Form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/Customers.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/Customers.php) | Validations Applied
+
 Form 3: (Created By Ajit Devkota): Form Name: Customers_Update_form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/updateSingle.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/updatesingle.php?customers_id=11) | Validations Applied
+
 Form 4: (Created By Ajit Devkota): Form Name: Customers_logIn_form(github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/login.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/login.php) | Validations Applied
+
 Form 5: (Created By Ajit Devkota): Form Name: Feedback_form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/feedbackForm.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/feedbackForm.php) | Validations Applied
+
 Form 6: (Created By Ajit Devkota): Form Name: Feedback_form_Update (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/updateSingle.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/updatesingle.php?feedback_id=25) | Validations Applied
+
 Form 7: (Created By Nitish Raj Neupane): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+
 Form 8: (Created By Bibek Pandey): Form Name: Table_booking_Form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/TableBooking.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/TableBooking.php) | Validations Applied
+
 Form 9:(Created By Bibek Pandey): Form Name: Table_booking_Update_form (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/updatesingle.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/updatesingle.php?booking_id=23) | Validations Applied
+
 </details>
-Created Tables
-List of the tables created
+
+### Created Tables
+<details>
+<summary>List of the tables created</summary>
 Table 1 (Created By Santosh Sigdel): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+
 Table 2 (Created By Ajit Devkota): | Customers_Sign_UP (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/Customers/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/Customers/update.php)
+
 Table 3 (Created By Ajit Devkota): | Customers_feedback (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/CustomersFeedback/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~ajit22000/Group16_web_project/CustomersFeedback/update.php)
+
 Table 4 (Created By Nitish Raj Neupane): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+
 Table 5 (Created By Bibek Pandey): | Table_Booking (github)(https://github.com/Santosh0423/Group16_web_project/blob/main/TableBooking/update.php) | (shell.hamk.fi)(http://shell.hamk.fi/~bibek23001/bp_tasks/TableBooking/update.php)
+
+</details>
